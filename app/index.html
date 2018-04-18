@@ -6,39 +6,42 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<nav>
+		<ul>
+			<li><a href="">GAMELOGGER</a></li>
+			<li><a href="">Our top 3 games</a></li>
+			<li><a href="">GAMES</a></li>
+			<li><a href="">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<div id="index-gallery">
+		<img src="img/warhome.jpg" alt="Shadow of War Image">
+		<img src="img/witcher3home.jpg" alt="Witcher 3 Image">
+		<img src="img/dishonoredhome.jpg" alt="Dishonored 2 Image">
+	</div>
 
-	<header>
-		<a id="logo">Hello World.</a>
-	</header>
 
-	<main>
-		<h1>Simple Gulp with SASS template</h1>
-		<p>This is a very simple document startup template. We have gulp with sass set up. We also have autoprefixer and browserSync installed. There are no unnecessary packages and no meddling with your JS or images.</p>
+	<div id="index-background">
+		<div id="index-title"><span>THE GAMES</span></div>
 
-		<h2>Usage</h2>
-		<p>The usage is fairly simple. `npm install` and later `gulp watch`.<br>You'll get the hang of it. ;)</p>
+		<div class="section-wrapper">
+			<img id="game-one" src="img/warsection.jpg" alt="Shadow of War">
+			<div class="description"><span>Ut lobortis enim ac est scelerisque imperdiet. Vestibulum ullamcorper purus luctus lacus semper dictum. Etiam ultrices, dui vitae facilisis dictum, ex lacus varius dolor, at pulvinar lacus nisl et velit. Nulla vehicula sapien sit amet pellentesque facilisis. Nam tincidunt ex blandit ante venenatis, et lacinia nibh sollicitudin. Nulla facilisi. Nunc ornare euismod neque in porttitor.</span></div>
+		</div>
 
-		<h2>SASS Compiling Rules</h2>
-		<p>All compiled files will compile within the app/css directory, under the same filename. For example the default files will compile as app/css/style.css and app/css/print.css.</p>
+		<div class="section-wrapper">
+			<div class="description"><span>Ut lobortis enim ac est scelerisque imperdiet. Vestibulum ullamcorper purus luctus lacus semper dictum. Etiam ultrices, dui vitae facilisis dictum, ex lacus varius dolor, at pulvinar lacus nisl et velit. Nulla vehicula sapien sit amet pellentesque facilisis. Nam tincidunt ex blandit ante venenatis, et lacinia nibh sollicitudin. Nulla facilisi. Nunc ornare euismod neque in porttitor.</span></div>
+			<img id="game-two" src="img/witchersection.jpg" alt="Witcher 3">
+		</div>
 
-		<h2>JS Compiling Rules</h2>
-		<p>All js files are split into two directories: domain - which contains your scripts, and vendor, which contains vendor scripts.</p>
+		<div class="section-wrapper">
+			<img id="game-three" src="img/dish2combat.jpg" alt="Dishonored 2">
+			<div class="description"><span>Ut lobortis enim ac est scelerisque imperdiet. Vestibulum ullamcorper purus luctus lacus semper dictum. Etiam ultrices, dui vitae facilisis dictum, ex lacus varius dolor, at pulvinar lacus nisl et velit. Nulla vehicula sapien sit amet pellentesque facilisis. Nam tincidunt ex blandit ante venenatis, et lacinia nibh sollicitudin. Nulla facilisi. Nunc ornare euismod neque in porttitor.</span></div>
+		</div>
+	</div>
 
-		<h2>Terms that apply</h2>
-		<ol>
-			<li>- All other files including JS and HTML are free to stay in the app folder.</li>
-			<li>- Generally, you will upload only the contents of the "app" folder to the server.</li>
-			<li>- Autoprefixer adds browser prefixes only after compiling success of SCSS.</li>
-			<li>- .gitignore is set up for OSX, Windows and Node.</li>
-			<li>- On every save of every file, browser will be refreshed.</li>
-			<li>- There are limits as we watch only for HTML, JS and SCSS files for reload.</li>
-			<li>- Manual page reload is needed for images directories and other.</li>
-		</ol>
-	</main>
-
-	<footer>Copyright &copy; 2015 Marko Mitranić</footer>
-
-	<script type="text/javascript" src="scripts/vendor.js"></script>
-	<script type="text/javascript" src="scripts/scripts.min.js"></script>
+	<div id="footer">
+		<div>Back To Top</div>
+	</div>
 </body>
-</html>
