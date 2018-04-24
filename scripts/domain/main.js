@@ -1,65 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// GAMEPAGE
 
 var request = new XMLHttpRequest();
 
-var url = "https://api.myjson.com/bins/m64xv?pretty=1";
+var url = "http://api.myjson.com/bins/m64xv?pretty=1";
 
 request.open("GET", url);
 
@@ -70,12 +13,19 @@ request.send();
 request.onload = function() {
 	var jsonObject = JSON.parse(request.response);
 	console.log(jsonObject);
-	document.getElementById("review-holder").innerHTML = jsonObject.reviews[0];
+	document.getElementById("about-holder").innerHTML = jsonObject.reviews[0].witcherAbout;
+	document.getElementById("system-holder").innerHTML = jsonObject.reviews[2].Requirements2;
+	document.getElementById("cpu-holder").innerHTML = jsonObject.reviews[2].CPU;
+	document.getElementById("gpu-holder").innerHTML = jsonObject.reviews[2].GPU;
+	document.getElementById("ram-holder").innerHTML = jsonObject.reviews[2].RAM;
+	document.getElementById("direct-holder").innerHTML = jsonObject.reviews[2].DirectX;
+	document.getElementById("os-holder").innerHTML = jsonObject.reviews[2].OS;
 }
 
-
-
-
+function scrollToTop() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
 
 const lightbox1 = document.getElementById("lightbox1");
 const closebutton1 = document.getElementById("closebutton1");
@@ -100,6 +50,8 @@ aboutGame.addEventListener("click", function() {
 closebutton2.addEventListener("click", function() {
 	lightbox2.classList.add("invisible");
 })
+
+// CONTACT PAGE
 
 function formValidate() {
 	const emailField = document.forms["contact"]["emailfield"].value;
